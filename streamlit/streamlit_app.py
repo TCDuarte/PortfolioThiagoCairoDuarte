@@ -46,8 +46,7 @@ def get_file_from_github(file_path, pat=None):
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 
 with st.sidebar:
-    selectedLanguage = option_menu('Idioma', ['Português', 'English'], 
-        # icons=['house', 'gear'], 
+    selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=1)
     
 selected2 = option_menu(None, ['Currículo', 'Portifólio', 'Certificados', 'Sobre'], 
@@ -65,6 +64,8 @@ elif selected2 == 'Portifólio':
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == 'Certificados':
     st.write('Salve3')
+    tst = get_file_from_github(r'/streamlit/texts/tst.txt')
+    st.write(tst)
     
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
