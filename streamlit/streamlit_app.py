@@ -65,7 +65,7 @@ elif selected2 == 'Portifólio':
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == 'Certificados':
     st.write('Salve3')
-    tst = get_file_from_github(r'/streamlit/texts/tst.txt')
+    tst = get_file_from_github(r'streamlit/texts/tst.txt')
     st.write(tst)
     
 ########## ABA - SOBRE ##########
