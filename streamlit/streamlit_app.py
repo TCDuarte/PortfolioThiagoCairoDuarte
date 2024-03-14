@@ -13,7 +13,7 @@ selected2 = option_menu(None, ['Currículo', 'Portifólio', 'Certificados', 'Sob
     icons=['file-earmark-text', 'clipboard-data', 'patch-check', 'info-lg'], 
     menu_icon='cast', default_index=0, orientation='horizontal')
 
-f = open('.texts/tst.txt', 'r')
+f = open('./texts/tst.txt', 'r')
 st.write(f.read())
 
 ########## CURRÍCULO ##########
