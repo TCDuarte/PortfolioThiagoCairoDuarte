@@ -10,8 +10,7 @@ with st.sidebar:
 selected2 = option_menu(None, ["Currículo", "Portifólio", "Certificados", "Sobre"], 
     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
-
-print (selected2)
+selected2
 if selected2 == 'Currículo':
     print('Salve')
 else: print ('Não salve')
