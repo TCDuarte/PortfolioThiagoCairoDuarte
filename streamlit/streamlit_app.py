@@ -21,6 +21,14 @@ selected2 = option_menu(None, ["Currículo", "Portifólio", "Certificados", "Sob
 ########## CURRÍCULO ##########
 if selected2 == 'Currículo':
     st.write('Salve')
-
-########## PORTIFÓLIO ##########
+    
+########## PORTIFÓLIO ##########   
+elif selected2 == 'Portifólio':
+    st.write('Salve2')
+    
+########## CERTIFICADOS ##########
+elif selected2 == 'Certificados':
+    st.write('Salve3')
+    
+########## SOBRE ##########
 else: st.write ('Não salve')
