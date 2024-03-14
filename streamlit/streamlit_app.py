@@ -10,6 +10,3 @@ with st.sidebar:
 selected2 = option_menu(None, ["Currículo", "Portifólio", "Certificados", "Sobre"], 
     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
-# selected2
-
-# print (selected2)
