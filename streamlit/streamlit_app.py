@@ -13,7 +13,7 @@ repository_name = 'PortfolioThiagoCairoDuarte'
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
-def get_file_from_github(file_path, pat=None):
+def get_file_from_github(file_path):
   """
   Função para abrir os arquivos de texto do repositório.
   Com o objetivo de não sobrecarregar o código com textos, os mesmos foram salvos dentro do repositório.
