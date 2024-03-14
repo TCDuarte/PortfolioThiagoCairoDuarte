@@ -12,7 +12,6 @@ selected2 = option_menu(None, ["Currículo", "Portifólio", "Certificados", "Sob
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 var = str(selected2)
-print (var)
 if var == 'Currículo':
     print('Salve')
 else: print ('Não salve')
