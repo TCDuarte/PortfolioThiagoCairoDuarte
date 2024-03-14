@@ -13,7 +13,7 @@ selected2 = option_menu(None, ['Currículo', 'Portifólio', 'Certificados', 'Sob
     icons=['file-earmark-text', 'clipboard-data', 'patch-check', 'info-lg'], 
     menu_icon='cast', default_index=0, orientation='horizontal')
 
-f = open('text/tst.txt', 'r')
+f = open('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/tree/c00d977955738caad063729437910a4cffb0f9c2/streamlit/texts', 'r')
 st.write(f.read())
 
 ########## CURRÍCULO ##########
