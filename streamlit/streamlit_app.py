@@ -28,10 +28,11 @@ def get_file_from_github(file_path):
 
   # URL da API baseada nos demais parâmetros
   url = f"https://api.github.com/repos/{username}/{repository_name}/contents/{file_path}"
+  st.write(url)
 
   # Request
   response = requests.get(url)
-
+  st.write(response.status_code)
   # Checa se a request obteve sucesso
   if response.status_code == 200:
     data = response.json()
