@@ -7,5 +7,5 @@ with st.sidebar:
         # icons=['house', 'gear'], 
         menu_icon="cast", default_index=1)
     selected
-    
+selected
 print (selected)
