@@ -1,3 +1,5 @@
+########## LIVRARIAS ##########
+
 import pandas as pd
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -11,8 +13,14 @@ selected2 = option_menu(None, ["Currículo", "Portifólio", "Certificados", "Sob
     # icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
-var = str(selected2)
-st.write(var)
-if var == 'Currículo':
+
+
+# var = str(selected2)
+# st.write(var)
+
+########## CURRÍCULO ##########
+if selected2 == 'Currículo':
     st.write('Salve')
+
+########## PORTIFÓLIO ##########
 else: st.write ('Não salve')
