@@ -58,6 +58,7 @@ selected2 = option_menu(None, ['Currículo', 'Portifólio', 'Certificados', 'Sob
     menu_icon='cast', default_index=0, orientation='horizontal')
 
 st.header(str(selected2))
+st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == 'Currículo':
     cv = get_file_from_github(r'cv.txt')
