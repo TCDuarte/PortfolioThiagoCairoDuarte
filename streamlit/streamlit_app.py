@@ -10,6 +10,7 @@ import base64
 username = 'TCDuarte'
 repository_name = 'PortfolioThiagoCairoDuarte'
 
+
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
 def get_file_from_github(file_path):
@@ -53,23 +54,26 @@ with st.sidebar:
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=1)
     
-selected2 = option_menu(None, ['Currículo', 'Portifólio', 'Certificados', 'Sobre'], 
-    icons=['file-earmark-text', 'clipboard-data', 'patch-check', 'info-lg'], 
-    menu_icon='cast', default_index=0, orientation='horizontal')
+options = ['Currículo', 'Portifólio', 'Certificados', 'Sobre'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates', 'About']
+
+selected2 = option_menu(None, 
+                        options, 
+                        icons=['file-earmark-text', 'clipboard-data', 'patch-check', 'info-lg'], 
+                        menu_icon='cast', default_index=0, orientation='horizontal')
 
 st.header(str(selected2))
 st.divider()
 ########## ABA - CURRÍCULO ##########
-if selected2 == 'Currículo':
+if selected2 == options[0]:
     cv = get_file_from_github(r'cv.txt')
     st.write(f"{cv}")
     
 ########## ABA - PORTIFÓLIO ##########   
-elif selected2 == 'Portifólio':
+elif selected2 == options[1]:
     st.write('Salve2')
     
 ########## ABA - CERTIFICADOS ##########
-elif selected2 == 'Certificados':
+elif selected2 == options[2]:
     st.write('Salve3')
 
 ########## ABA - SOBRE ##########
