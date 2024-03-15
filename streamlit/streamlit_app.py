@@ -66,6 +66,6 @@ elif selected2 == 'Certificados':
     st.write('Salve3')
     tst = get_file_from_github(r'streamlit/texts/tst.txt')
     st.write(f"{tst}")
-    stx.scrollableTextbox('My very long text.')
+    # stx.scrollableTextbox('My very long text.')
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
