@@ -5,6 +5,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import requests
 import base64
+import streamlit_scrollable_textbox as stx
 
 ########## DECLARAÇÃO DAS VARIÁVEIS CHAVES ##########
 
@@ -65,6 +66,6 @@ elif selected2 == 'Certificados':
     st.write('Salve3')
     tst = get_file_from_github(r'streamlit/texts/tst.txt')
     st.write(f"{tst}")
-    st.markdown(4 * "<br />", unsafe_allow_html=True)
+    stx.scrollableTextbox('My very long text.')
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
