@@ -42,7 +42,7 @@ def get_file_from_github(file_path):
     file_content = base64.b64decode(data["content"]).decode("utf-8")
     return file_content
   else:
-    print(f"Error: {response.status_code}")
+    st.write(f"Error: {response.status_code}")
     return None
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
