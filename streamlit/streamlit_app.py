@@ -44,12 +44,12 @@ def get_file_from_github(file_path):
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 
 with st.sidebar:
-    img = st.image('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true',
-                   use_column_width = 'always')
+    st.image('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true',
+             use_column_width = 'always')
     st.write(f'**Thiago Cairo Duarte**')
     st.write('15 99771-7474')
     st.write('thiago.cairo.duarte@gmail.com')
-    st.page_link('https://www.linkedin.com/in/tcduarte/')
+    st.write('https://www.linkedin.com/in/tcduarte/')
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=1)
     
