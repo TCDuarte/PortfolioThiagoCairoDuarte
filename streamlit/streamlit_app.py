@@ -30,11 +30,11 @@ def get_file_from_github(file_path):
   url = f"https://api.github.com/repos/{username}/{repository_name}/contents/streamlit/texts/{language}/{file_path}"
   # Request
   response = requests.get(url)
-
+  st.write(response.status_code)
   # Checa se a request obteve sucesso
   if response.status_code == 200:
     data = response.json()
-    st.write(response.status_code)
+    
     # Decodificação do arquivo em texto
     file_content = base64.b64decode(data["content"]).decode("utf-8")
     return file_content
