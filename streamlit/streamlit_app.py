@@ -65,6 +65,6 @@ elif selected2 == 'Certificados':
     st.write('Salve3')
     tst = get_file_from_github(r'streamlit/texts/tst.txt')
     st.write(f"{tst}")
-    
+    st.markdown(4 * "<br />", unsafe_allow_html=True)
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
