@@ -26,7 +26,7 @@ def get_file_from_github(file_path):
   Returns:
       str: Texto contido dentro do arquivo.
   """
-  language = 'EN' if selected2 == 'English' else 'PT'
+  language = 'EN' if selectedLanguage == 'English' else 'PT'
   # URL da API baseada nos demais parâmetros
   url = f"https://api.github.com/repos/{username}/{repository_name}/contents/streamlit/texts/{language}/{file_path}"
   # Request
