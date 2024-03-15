@@ -26,9 +26,9 @@ def get_file_from_github(file_path):
   Returns:
       str: Texto contido dentro do arquivo.
   """
-
+  language = 'EN' if selected2 == 'English' else 'PT'
   # URL da API baseada nos demais parâmetros
-  url = f"https://api.github.com/repos/{username}/{repository_name}/contents/{file_path}"
+  url = f"https://api.github.com/repos/{username}/{repository_name}/contents/streamlit/texts/{language}/{file_path}"
   # Request
   response = requests.get(url)
 
@@ -64,7 +64,7 @@ elif selected2 == 'Portifólio':
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == 'Certificados':
     st.write('Salve3')
-    tst = get_file_from_github(r'streamlit/texts/tst.txt')
+    tst = get_file_from_github(r'/tst2.txt')
     st.write(f"{tst}")
     # stx.scrollableTextbox('My very long text.')
 ########## ABA - SOBRE ##########
