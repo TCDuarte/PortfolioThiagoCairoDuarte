@@ -44,6 +44,7 @@ def get_file_from_github(file_path):
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 
 with st.sidebar:
+    img = 'IMG'
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=1)
     
