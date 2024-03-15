@@ -36,6 +36,7 @@ def get_file_from_github(file_path):
   # Checa se a request obteve sucesso
   if response.status_code == 200:
     data = response.json()
+    st.write(data)
     
     # Decodificação do arquivo em texto
     file_content = base64.b64decode(data["content"]).decode("utf-8")
