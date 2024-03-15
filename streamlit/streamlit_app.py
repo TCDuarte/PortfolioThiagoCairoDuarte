@@ -64,7 +64,7 @@ elif selected2 == 'Portifólio':
 elif selected2 == 'Certificados':
     st.write('Salve3')
     tst = get_file_from_github(r'streamlit/texts/tst.txt')
-    st.write(tst)
+    st.write(f"{tst}")
     
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
