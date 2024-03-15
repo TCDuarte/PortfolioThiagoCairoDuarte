@@ -28,21 +28,18 @@ def get_file_from_github(file_path):
 
   # URL da API baseada nos demais parâmetros
   url = f"https://api.github.com/repos/{username}/{repository_name}/contents/{file_path}"
-  st.write(url)
-
   # Request
   response = requests.get(url)
-  st.write(response.status_code)
+
   # Checa se a request obteve sucesso
   if response.status_code == 200:
     data = response.json()
-    st.write(data)
     
     # Decodificação do arquivo em texto
     file_content = base64.b64decode(data["content"]).decode("utf-8")
     return file_content
   else:
-    st.write(f"Error: {response.status_code}")
+    print(f"Error: {response.status_code}")
     return None
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
