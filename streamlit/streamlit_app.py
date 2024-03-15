@@ -64,7 +64,7 @@ elif selected2 == 'Portifólio':
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == 'Certificados':
     st.write('Salve3')
-    tst = get_file_from_github(r'tst2.txt')
+    tst = get_file_from_github(r'cv.txt')
     st.write(f"{tst}")
     # stx.scrollableTextbox('My very long text.')
 ########## ABA - SOBRE ##########
