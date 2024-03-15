@@ -46,7 +46,7 @@ def get_file_from_github(file_path):
 with st.sidebar:
     img = st.image('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true',
                    use_column_width = 'always')
-    st.write('Thiago Cairo Duarte  (15)99771-7474')
+    st.write(f'Thiago Cairo Duarte   (15)99771-7474')
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=1)
     
