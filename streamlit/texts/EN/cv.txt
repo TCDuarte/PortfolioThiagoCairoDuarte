@@ -1,4 +1,4 @@
-Profile
+**Profile**
   
   
 I'm looking for professional development in Business Intelligence or data analytics areas.
@@ -6,16 +6,17 @@ I find learning uncomplicated because I feel accomplished working in the area: I
 interested in all the data processes, from extraction to insight generation by analytics
 methods for business problem resolutions.
   
-Education
+**Education**
   
   
 ESPM /Social Sciences (Bachelor)
 (Jan/2016 - Dec/2022 // Concluded)
+  
 ESPM /Social Communication (Bachelor)
 (Jan/2014 - Nov/2015 // Not concluded)
   
   
-Professional experience
+**Professional experience**
   
   
 Alumia
@@ -49,7 +50,7 @@ I was responsible for the social media of ESPM Social with the creative team.
 My responsibility was marketing consulting for the NGO Inovha.
   
   
-Key areas of expertise
+**Key areas of expertise**
   
 Excel and Google Sheets (advanced)
   
@@ -66,7 +67,8 @@ Google App Script Programming (Intermediate)
 PowerPoint and Google Slides (Intermediate)
   
   
-Qualifications & other courses
+  
+**Qualifications & other courses**
   
 English (fluent)
   
