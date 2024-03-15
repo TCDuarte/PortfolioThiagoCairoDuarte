@@ -25,10 +25,8 @@ def get_file_from_github(file_path):
       str: Texto contido dentro do arquivo.
   """
   language = 'EN' if selectedLanguage == 'English' else 'PT'
-  st.write(language)
   # URL da API baseada nos demais parâmetros
   url = f"https://api.github.com/repos/{username}/{repository_name}/contents/streamlit/texts/{language}/{file_path}"
-  st.write(url)
   # Request
   response = requests.get(url)
 
@@ -57,7 +55,6 @@ selected2 = option_menu(None, ['Currículo', 'Portifólio', 'Certificados', 'Sob
 if selected2 == 'Currículo':
     cv = get_file_from_github(r'cv.txt')
     st.write(f"{cv}")
-    st.write('Salve')
     
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == 'Portifólio':
