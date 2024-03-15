@@ -30,6 +30,7 @@ def get_file_from_github(file_path):
   st.write(language)
   # URL da API baseada nos demais parâmetros
   url = f"https://api.github.com/repos/{username}/{repository_name}/contents/streamlit/texts/{language}/{file_path}"
+  st.write(url)
   # Request
   response = requests.get(url)
 
