@@ -1,11 +1,9 @@
 ########## LIVRARIAS ##########
 
-import pandas as pd
 import streamlit as st
 from streamlit_option_menu import option_menu
 import requests
 import base64
-import streamlit_scrollable_textbox as stx
 
 ########## DECLARAÇÃO DAS VARIÁVEIS CHAVES ##########
 
