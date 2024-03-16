@@ -89,8 +89,6 @@ elif selected2 == options[2]:
     link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWcpEoQTEqt5KbiDsphxgdTwIPuWszrNLWL-zwxm-WajTZ_PlKRmqg3vOzc_EFrA-5aZ1KSqaFvMPC/pub?gid=1545264035&single=true&output=csv'
     certificates = pd.read_csv(link)
     certificates['Tags'] = stringToList(certificates['Tags'])
-    certificates.set_index(['Nome'],
-                           inplace = True)
     columnNames = ['Nome', 
                    'Data', 
                    'Instituição'] if selectedLanguage != 'English' else ['Name',
@@ -100,6 +98,8 @@ elif selected2 == options[2]:
                                  certificates.columns[1]: columnNames[1],
                                  certificates.columns[2]: columnNames[2]},
                         inplace = True)
+    certificates.set_index(['Nome'],
+                           inplace = True)
     st.write(certificates)
 
 ########## ABA - SOBRE ##########
