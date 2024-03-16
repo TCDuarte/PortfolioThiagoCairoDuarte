@@ -44,7 +44,7 @@ def get_file_from_github(file_path):
     return None
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
-
+st.set_page_config(layout = 'wide')
 with st.sidebar:
     st.image('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true',
              use_column_width = 'auto')
