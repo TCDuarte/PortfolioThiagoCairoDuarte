@@ -1,5 +1,6 @@
 ########## LIVRARIAS ##########
 
+import pandas as pd
 import streamlit as st
 from streamlit_option_menu import option_menu
 import requests
@@ -75,7 +76,9 @@ elif selected2 == options[1]:
     
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
-    st.write('Salve3')
+    link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWcpEoQTEqt5KbiDsphxgdTwIPuWszrNLWL-zwxm-WajTZ_PlKRmqg3vOzc_EFrA-5aZ1KSqaFvMPC/pub?gid=1545264035&single=true&output=csv'
+    myData = pd.read_csv(link)
+    st.write(myData)
 
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
