@@ -98,8 +98,8 @@ elif selected2 == options[2]:
                                  certificates.columns[1]: columnNames[1],
                                  certificates.columns[2]: columnNames[2]},
                         inplace = True)
-    certificates.set_index(['Nome'],
-                           inplace = True)
+    # certificates.set_index(['Nome'],
+    #                        inplace = True)
     st.write(certificates)
 
 ########## ABA - SOBRE ##########
