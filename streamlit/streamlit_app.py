@@ -91,6 +91,14 @@ elif selected2 == options[2]:
     certificates['Tags'] = stringToList(certificates['Tags'])
     certificates.set_index(['Nome'],
                            inplace = True)
+    columnNames = ['Nome', 
+                   'Data', 
+                   'Instituição'] if selectedLanguage != 'English' else ['Name',
+                                                                         'Date',
+                                                                         'Institution']
+    certificates.rename(columns={certificates[0]: columnNames[0],
+                                 certificates[1]: columnNames[1],
+                                 certificates[2]: columnNames[2]})
     st.write(certificates)
 
 ########## ABA - SOBRE ##########
