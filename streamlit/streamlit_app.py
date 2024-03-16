@@ -88,7 +88,7 @@ elif selected2 == options[1]:
 elif selected2 == options[2]:
     link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWcpEoQTEqt5KbiDsphxgdTwIPuWszrNLWL-zwxm-WajTZ_PlKRmqg3vOzc_EFrA-5aZ1KSqaFvMPC/pub?gid=1545264035&single=true&output=csv'
     certificates = pd.read_csv(link)
-    certificates['tags'] = stringToList(certificates['tags'])
+    certificates['Tags'] = stringToList(certificates['Tags'])
     st.write(certificates)
 
 ########## ABA - SOBRE ##########
