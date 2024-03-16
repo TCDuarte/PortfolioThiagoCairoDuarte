@@ -61,7 +61,8 @@ selected2 = option_menu(None,
                         icons=['file-earmark-text', 'clipboard-data', 'patch-check', 'info-lg'], 
                         menu_icon='cast', default_index=0, orientation='horizontal')
 
-st.header(str(selected2)) if selected2 != options[0] else st.header('Thiago Cairo Duarte')
+title = str(selected2) if selected2 != options[0] else 'Thiago Cairo Duarte'
+st.header(str(title))
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
