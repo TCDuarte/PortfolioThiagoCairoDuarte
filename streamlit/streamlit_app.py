@@ -46,7 +46,7 @@ def get_file_from_github(file_path):
 
 with st.sidebar:
     st.image('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true',
-             use_column_width = 'always')
+             use_column_width = 'auto')
     st.write(f'**Thiago Cairo Duarte**')
     st.write('15 99771-7474')
     st.write('thiago.cairo.duarte@gmail.com')
