@@ -43,6 +43,16 @@ def get_file_from_github(file_path):
     print(f"Error: {response.status_code}")
     return None
 
+def stringToList(serie):
+    finalList = []
+    for x in serie:
+        if x.count(';') > 0:
+            valueList = x.split('; ')
+            finalList.append(valueList)
+        else:
+            finalList.append([x])
+    return finalList
+
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
 with st.sidebar:
@@ -77,8 +87,9 @@ elif selected2 == options[1]:
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
     link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWcpEoQTEqt5KbiDsphxgdTwIPuWszrNLWL-zwxm-WajTZ_PlKRmqg3vOzc_EFrA-5aZ1KSqaFvMPC/pub?gid=1545264035&single=true&output=csv'
-    myData = pd.read_csv(link)
-    st.write(myData)
+    certificates = pd.read_csv(link)
+    certificates['tags'] = stringToList(certificates['tags'])
+    st.write(certificates)
 
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
