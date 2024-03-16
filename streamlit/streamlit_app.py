@@ -96,9 +96,10 @@ elif selected2 == options[2]:
                    'Instituição'] if selectedLanguage != 'English' else ['Name',
                                                                          'Date',
                                                                          'Institution']
-    certificates.rename(columns={certificates[0]: columnNames[0],
-                                 certificates[1]: columnNames[1],
-                                 certificates[2]: columnNames[2]})
+    certificates.rename(columns = {certificates.columns[0]: columnNames[0],
+                                 certificates.columns[1]: columnNames[1],
+                                 certificates.columns[2]: columnNames[2]},
+                        inplace = True)
     st.write(certificates)
 
 ########## ABA - SOBRE ##########
