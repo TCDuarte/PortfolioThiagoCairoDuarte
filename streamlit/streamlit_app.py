@@ -63,7 +63,7 @@ with st.sidebar:
     st.write('thiago.cairo.duarte@gmail.com')
     st.write('https://www.linkedin.com/in/tcduarte/')
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
-        menu_icon='cast', default_index=1)
+        menu_icon='cast', default_index=0)
     
 options = ['Currículo', 'Portifólio', 'Certificados', 'Sobre'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates', 'About']
 
