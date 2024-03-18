@@ -93,6 +93,33 @@ elif selected2 == options[1]:
                 url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
             )
         example()
+    with col2:
+        def example():
+            card(
+                title="",
+                text="Inclusor de certificações",
+                image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+                url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+            )
+        example()
+    with col3:
+        def example():
+            card(
+                title="",
+                text="Inclusor de certificações",
+                image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+                url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+            )
+        example()
+    with col4:
+        def example():
+            card(
+                title="",
+                text="Inclusor de certificações",
+                image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+                url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+            )
+        example()
     
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
