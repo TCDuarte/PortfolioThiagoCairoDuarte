@@ -54,6 +54,14 @@ def stringToList(serie):
             finalList.append([x])
     return finalList
 
+def portifolioCards():
+    card(
+        title="",
+        text="Inclusor de certificações",
+        image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+        url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+        )
+
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
 with st.sidebar:
@@ -85,34 +93,34 @@ if selected2 == options[0]:
 elif selected2 == options[1]:
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        def example():
-            card(
-                title="",
-                text="Inclusor de certificações",
-                image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-                url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+        card(
+            title="1",
+            text="Inclusor de certificações",
+            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
             )
-        example()
+
     with col2:
-        example()
+        card(
+            title="2",
+            text="Inclusor de certificações",
+            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+            )
     with col3:
-        def example():
-            card(
-                title="",
-                text="Inclusor de certificações",
-                image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-                url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+        card(
+            title="4",
+            text="Inclusor de certificações",
+            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
             )
-        example()
     with col4:
-        def example():
-            card(
-                title="",
-                text="Inclusor de certificações",
-                image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-                url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
+        card(
+            title="8",
+            text="Inclusor de certificações",
+            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
+            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
             )
-        example()
     
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
