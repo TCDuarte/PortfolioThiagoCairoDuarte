@@ -73,7 +73,6 @@ def add_to_portfolium_page(data, number):
             image = row['file'],
             url = row['url'],
             )
-        st.write(row['tags'])
         tagger_component(
             "tags",
             row['tags'],
