@@ -61,8 +61,9 @@ def add_to_portfolium_page(number):
             title="",
             text={row['name']},
             image={row['file']},
-            url={row['url']}
+            url={row['url']},
             )
+
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
 with st.sidebar:
