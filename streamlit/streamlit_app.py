@@ -110,7 +110,7 @@ def example():
     card(
         title="Hello World!",
         text="Some description",
-        image="http://placekitten.com/300/250",
+        image="'https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true'",
         url="https://www.google.com",
     )
     
