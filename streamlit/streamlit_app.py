@@ -74,7 +74,7 @@ def add_to_portfolium_page(data, number):
             url = row['url'],
             )
         tagger_component(
-            "tags",
+            "",
             row['tags'],
             color_name=["blue", "orange"],
         )
