@@ -106,6 +106,7 @@ if selected2 == options[0]:
 elif selected2 == options[1]:
     portfolioData = pd.read_json('streamlit/portfolio.json')
     portfolioData['column'] = add_col_index(portfolioData)
+    st.write(portfolioData)
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         add_to_portfolium_page(portfolioData, 1)
