@@ -58,7 +58,7 @@ def add_col_index(df):
     b = 0
     colNun = 1
     while b < len(df.index):
-        listN.append('col' + str(colNun))
+        listN.append(colNun)
         b += 1
         colNun = colNun + 1 if colNun != 4 else 1
     return listN
@@ -66,7 +66,6 @@ def add_col_index(df):
 def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
-        print(f"name: {row['name']}, Age: {row['url']}")
         card(
             title = "",
             text = row['nameEN'] if selectedLanguage == 'English' else row['namePT'],
