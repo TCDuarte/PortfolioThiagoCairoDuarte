@@ -11,6 +11,7 @@ import base64
 
 username = 'TCDuarte'
 repository_name = 'PortfolioThiagoCairoDuarte'
+df = pd.read_json('streamlit/portfolio.json')
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
@@ -83,6 +84,7 @@ if selected2 == options[0]:
     
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == options[1]:
+    st.write(df)
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         card(
