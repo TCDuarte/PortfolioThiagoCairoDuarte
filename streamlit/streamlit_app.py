@@ -75,7 +75,8 @@ def add_to_portfolium_page(data, number):
             )
         st.write(row['tags'])
         tagger_component(
-            ["turtle", "rabbit", "lion"],
+            "tags",
+            row['tags'],
             color_name=["blue", "orange", "lightblue"],
         )
 
