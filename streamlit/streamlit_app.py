@@ -73,6 +73,7 @@ def add_to_portfolium_page(data, number):
             image = row['file'],
             url = row['url'],
             )
+        st.write(row['nameEN'] if selectedLanguage == 'English' else row['namePT'])
         tagger_component(
             "",
             row['tags'],
