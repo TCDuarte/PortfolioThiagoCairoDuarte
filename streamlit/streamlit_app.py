@@ -83,7 +83,16 @@ if selected2 == options[0]:
     
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == options[1]:
-    st.write('Salve2')
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        def example():
+            card(
+                title="Hello World!",
+                text="Some description",
+                image="'https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true'",
+                url="https://www.google.com",
+            )
+        example()
     
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
@@ -106,12 +115,3 @@ elif selected2 == options[2]:
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
 
-def example():
-    card(
-        title="Hello World!",
-        text="Some description",
-        image="'https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true'",
-        url="https://www.google.com",
-    )
-    
-example()
