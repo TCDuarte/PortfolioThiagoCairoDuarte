@@ -53,8 +53,8 @@ def stringToList(serie):
             finalList.append([x])
     return finalList
 
-def add_to_portfolium_page(number):
-    filteredDf = portfolioData[portfolioData['column'] == number]
+def add_to_portfolium_page(data, number):
+    filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
         print(f"name: {row['name']}, Age: {row['url']}")
         card(
@@ -97,7 +97,7 @@ elif selected2 == options[1]:
     portfolioData = pd.read_json('streamlit/portfolio.json')
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        add_to_portfolium_page(1)
+        add_to_portfolium_page(portfolioData, 1)
     with col2:
         card(
             title="2",
