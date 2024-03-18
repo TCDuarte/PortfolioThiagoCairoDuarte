@@ -11,7 +11,6 @@ import base64
 
 username = 'TCDuarte'
 repository_name = 'PortfolioThiagoCairoDuarte'
-df = pd.read_json('streamlit/portfolio.json')
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
@@ -54,6 +53,15 @@ def stringToList(serie):
             finalList.append([x])
     return finalList
 
+def add_to_portfolium_page(number):
+    filteredDf = portfolioData[portfolioData['column'] == number]
+    for index, row in filteredDf.iterrows():
+        card(
+            title="",
+            text={row['name']},
+            image={row['file']},
+            url={row['url']}
+            )
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
 with st.sidebar:
@@ -84,16 +92,10 @@ if selected2 == options[0]:
     
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == options[1]:
-    st.write(df)
+    portfolioData = pd.read_json('streamlit/portfolio.json')
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        card(
-            title="1",
-            text="Inclusor de certificações",
-            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
-            )
-
+        add_to_portfolium_page(1)
     with col2:
         card(
             title="2",
