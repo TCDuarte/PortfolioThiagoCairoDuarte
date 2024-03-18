@@ -77,7 +77,7 @@ def add_to_portfolium_page(data, number):
         tagger_component(
             "tags",
             row['tags'],
-            color_name=["blue", "orange", "lightblue"],
+            color_name=["blue", "orange"],
         )
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
