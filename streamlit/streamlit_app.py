@@ -56,6 +56,7 @@ def stringToList(serie):
 def add_to_portfolium_page(number):
     filteredDf = portfolioData[portfolioData['column'] == number]
     for index, row in filteredDf.iterrows():
+        print(f"name: {row['name']}, Age: {row['ur']}")
         card(
             title="",
             text={row['name']},
