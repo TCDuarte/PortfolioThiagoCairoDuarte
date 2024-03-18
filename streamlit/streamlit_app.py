@@ -86,11 +86,13 @@ st.header(str(title))
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
+    st.divider()
     cv = get_file_from_github(r'cv.txt')
     st.write(f"{cv}")
     
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == options[1]:
+    st.divider()
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         card(
@@ -124,6 +126,7 @@ elif selected2 == options[1]:
     
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
+    st.divider()
     link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWcpEoQTEqt5KbiDsphxgdTwIPuWszrNLWL-zwxm-WajTZ_PlKRmqg3vOzc_EFrA-5aZ1KSqaFvMPC/pub?gid=1545264035&single=true&output=csv'
     certificates = pd.read_csv(link)
     certificates['Tags'] = stringToList(certificates['Tags'])
@@ -141,5 +144,5 @@ elif selected2 == options[2]:
     st.dataframe(certificates)
 
 ########## ABA - SOBRE ##########
-else: st.write ('Não salve')
+else: st.divider()
 
