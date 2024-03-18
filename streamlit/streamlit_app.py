@@ -104,7 +104,7 @@ if selected2 == options[0]:
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == options[1]:
     portfolioData = pd.read_json('streamlit/portfolio.json')
-    st.write(portfolioData)
+    portfolioData['column'] = add_col_index(portfolioData)
     cols = st.columns(4)
     for col_num, col in enumerate(cols, start=1):  # Enumerate for column numbers
         with col:
