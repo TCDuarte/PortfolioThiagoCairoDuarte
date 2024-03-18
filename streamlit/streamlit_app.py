@@ -88,6 +88,7 @@ elif selected2 == options[1]:
         def example():
             card(
                 title="Hello World!",
+                text="",
                 image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
                 url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
             )
