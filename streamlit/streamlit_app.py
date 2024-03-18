@@ -3,6 +3,7 @@
 import pandas as pd
 import streamlit as st
 from streamlit_option_menu import option_menu
+from streamlit_extras.stoggle import stoggle
 import requests
 import base64
 
@@ -104,3 +105,11 @@ elif selected2 == options[2]:
 
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
+
+# def example():
+#     card(
+#         title="Hello World!",
+#         text="Some description",
+#         image="http://placekitten.com/300/250",
+#         url="https://www.google.com",
+#     )
