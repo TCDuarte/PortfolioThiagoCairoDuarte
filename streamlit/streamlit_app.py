@@ -12,7 +12,6 @@ import base64
 username = 'TCDuarte'
 repository_name = 'PortfolioThiagoCairoDuarte'
 
-
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
 def get_file_from_github(file_path):
