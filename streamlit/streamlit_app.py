@@ -57,12 +57,12 @@ def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
         print(f"name: {row['name']}, Age: {row['url']}")
-        card(
-            title="",
-            text={row['name']},
-            image={row['file']},
-            url={row['url']},
-            )
+        # card(
+        #     title="",
+        #     text={row['name']},
+        #     image={row['file']},
+        #     url={row['url']},
+        #     )
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
