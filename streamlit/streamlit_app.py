@@ -113,3 +113,5 @@ def example():
         image="http://placekitten.com/300/250",
         url="https://www.google.com",
     )
+    
+example()
