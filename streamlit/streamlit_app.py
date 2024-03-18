@@ -99,27 +99,12 @@ elif selected2 == options[1]:
     with col1:
         add_to_portfolium_page(portfolioData, 1)
     with col2:
-        card(
-            title="2",
-            text="Inclusor de certificações",
-            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
-            )
+        add_to_portfolium_page(portfolioData, 2)
     with col3:
-        card(
-            title="4",
-            text="Inclusor de certificações",
-            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
-            )
+        add_to_portfolium_page(portfolioData, 3)
     with col4:
-        card(
-            title="8",
-            text="Inclusor de certificações",
-            image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-            url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
-            )
-    
+        add_to_portfolium_page(portfolioData, 4)
+        
 ########## ABA - CERTIFICADOS ##########
 elif selected2 == options[2]:
     link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWcpEoQTEqt5KbiDsphxgdTwIPuWszrNLWL-zwxm-WajTZ_PlKRmqg3vOzc_EFrA-5aZ1KSqaFvMPC/pub?gid=1545264035&single=true&output=csv'
