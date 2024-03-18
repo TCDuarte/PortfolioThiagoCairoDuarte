@@ -6,6 +6,7 @@ from streamlit_option_menu import option_menu
 from streamlit_extras.card import card
 import requests
 import base64
+from streamlit_extras.tags import tagger_component
 
 ########## DECLARAÇÃO DAS VARIÁVEIS CHAVES ##########
 
@@ -73,6 +74,11 @@ def add_to_portfolium_page(data, number):
             url = row['url'],
             )
         st.write(row['tags'])
+        tagger_component(
+            "Here are colored tags",
+            ["turtle", "rabbit", "lion"],
+            color_name=["blue", "orange", "lightblue"],
+        )
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
