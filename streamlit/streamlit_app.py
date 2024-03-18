@@ -72,7 +72,7 @@ def add_to_portfolium_page(data, number):
             image = row['file'],
             url = row['url'],
             )
-        st.write(['tags'])
+        st.write(['tags'[0]])
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
