@@ -53,13 +53,23 @@ def stringToList(serie):
             finalList.append([x])
     return finalList
 
+def add_col_index(df):
+    listN = []
+    b = 0
+    colNun = 1
+    while b < len(df.index):
+        listN.append('col' + str(colNun))
+        b += 1
+        colNun = colNun + 1 if colNun != 4 else 1
+    return listN
+
 def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
         print(f"name: {row['name']}, Age: {row['url']}")
         card(
             title = "",
-            text = row['name'],
+            text = row['nameEN'] if selectedLanguage == 'English' else row['namePT'],
             image = row['file'],
             url = row['url'],
             )
@@ -95,6 +105,7 @@ if selected2 == options[0]:
 ########## ABA - PORTIFÓLIO ##########   
 elif selected2 == options[1]:
     portfolioData = pd.read_json('streamlit/portfolio.json')
+    portfolioData['column'] = add_col_index(portfolioData)
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         add_to_portfolium_page(portfolioData, 1)
