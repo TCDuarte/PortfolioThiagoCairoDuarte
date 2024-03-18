@@ -54,14 +54,6 @@ def stringToList(serie):
             finalList.append([x])
     return finalList
 
-def portifolioCards():
-    card(
-        title="",
-        text="Inclusor de certificações",
-        image="https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/portifolio_pictures/cert_includ.png?raw=true",
-        url="https://docs.google.com/spreadsheets/d/12lkSbB5lPSyyEMMUkw35cFwOrVYnq3k2NVO11-6oF8g/edit#gid=0",
-        )
-
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
 with st.sidebar:
