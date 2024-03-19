@@ -74,7 +74,7 @@ def add_to_portfolium_page(data, number):
                     "height": "350px",
                     "border-radius": "30px",
                     "margin": -10,
-                    "padding": 0}
+                    "padding": -10}
                     }
                 )
         tagger_component(
