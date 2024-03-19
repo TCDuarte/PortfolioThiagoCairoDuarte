@@ -68,7 +68,13 @@ def add_to_portfolium_page(data, number):
             text = row['nameEN'] if selectedLanguage == 'English' else row['namePT'],
             image = row['file'],
             url = row['url'],
-            )
+            styles={
+                "card": {
+                    "width": "500px",
+                    "height": "500px",
+                    "border-radius": "0px"}
+                    }
+                )
         tagger_component(
             "",
             row['tags'],
