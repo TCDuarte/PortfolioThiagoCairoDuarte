@@ -76,6 +76,7 @@ def tag_color_list(tagsList):
     with open('data/color_reference.json', "r") as jsonfile:
         colorReference = json.load(jsonfile)
     for x in tagsList:
+        print(x)
         colorList.append(find_color(x, colorReference))
 
 def add_to_portfolium_page(data, number):
