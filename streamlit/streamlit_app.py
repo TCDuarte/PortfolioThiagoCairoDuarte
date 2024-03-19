@@ -99,7 +99,7 @@ if selected2 == options[0]:
     with open(f"texts/{pathing}/cv.txt", "r") as file:
         text_content = file.read()
     
-    
+    educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(title)}</h1>", unsafe_allow_html=True)
     st.write(text_content)
     
