@@ -91,9 +91,9 @@ def add_to_portfolium_page(data, number):
         tagger_component(
             "",
             row['tags'],
-            color_name = tag_color_list(list(row['tags'])),
+            color_name = tag_color_list(row['tags']),
         )
-        st.write(type(row['tags']))
+        st.write(row['tags'])
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
