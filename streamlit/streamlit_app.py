@@ -72,7 +72,7 @@ def add_to_portfolium_page(data, number):
                 "card": {
                     "width": "200px",
                     "height": "200px",
-                    "border-radius": "50px"}
+                    "border-radius": "30px"}
                     }
                 )
         tagger_component(
