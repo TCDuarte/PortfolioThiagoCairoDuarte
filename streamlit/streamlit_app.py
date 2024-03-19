@@ -77,11 +77,12 @@ def add_to_portfolium_page(data, number):
                     "margin-bottom": -50}
                     }
                 )
-        tagger_component(
-            "",
-            row['tags'],
-            color_name = tag_color_list(row['tags']),
-        )
+        st.write(
+            tagger_component(
+                "",
+                row['tags'],
+                color_name = tag_color_list(row['tags']),
+        ))
         st.divider()
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
