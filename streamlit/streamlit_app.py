@@ -66,6 +66,7 @@ def add_col_index(df):
     return listN
 
 def find_color(value, data):
+    st.write(data)
     for item in data:
         if value in item.values():
             return list(item.keys())[0]  # Get the first key (color)
@@ -76,7 +77,6 @@ def tag_color_list(tagsList):
     with open('data/color_reference.json', "r") as jsonfile:
         colorReference = json.load(jsonfile)
     for x in tagsList:
-        st.write(colorReference)
         colorList.append(find_color(x, colorReference))
 
 def add_to_portfolium_page(data, number):
