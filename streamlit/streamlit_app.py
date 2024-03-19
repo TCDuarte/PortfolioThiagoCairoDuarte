@@ -17,6 +17,12 @@ style = "<style>h2 {text-align: center;}</style>"
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
+def return_text():
+    pathing = 'EN' if selectedLanguage == 'English' else 'PT'
+    with open(f"texts/{pathing}/education.txt", "r") as file:
+        textContent = file.read()
+    return textContent
+
 def stringToList(serie):
     finalList = []
     for x in serie:
@@ -95,13 +101,11 @@ st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
-    pathing = 'EN' if selectedLanguage == 'English' else 'PT'
-    with open(f"texts/{pathing}/education.txt", "r") as file:
-        text_content = file.read()
+    
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
-    st.write(text_content)
+    return_text()
     # st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
