@@ -92,7 +92,7 @@ def add_to_portfolium_page(data, number):
             url = row['url'],
             )
         projectName = row['nameEN'] if selectedLanguage == 'English' else row['namePT']
-        st.write(fr"<h1 style='text-align: center; color: grey;'>{projectName}</h1>", unsafe_allow_html=True)
+        st.write(fr"<h1 font-size: 14px; style='text-align: center; color: black;'>{projectName}</h1>", unsafe_allow_html=True)
         tagger_component(
             "",
             row['tags'],
