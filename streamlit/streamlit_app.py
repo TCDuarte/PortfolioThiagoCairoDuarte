@@ -66,7 +66,7 @@ def add_col_index(df):
     return listN
 
 def find_color(value, data):
-    st.write(data[0])
+    st.write(data)
     for item in data:
         if value in item.values():
             return list(item.keys())[0]  # Get the first key (color)
@@ -92,7 +92,7 @@ def add_to_portfolium_page(data, number):
         tagger_component(
             "",
             row['tags'],
-            color_name = tag_color_list(row['tags']),
+            color_name = tag_color_list(list(row['tags'])),
         )
         st.write(tag_color_list(row['tags']))
 
