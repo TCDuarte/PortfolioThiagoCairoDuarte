@@ -101,7 +101,7 @@ if selected2 == options[0]:
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     st.write(text_content)
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
-    st.write(fr"<h1 style='font-size: 20px; color: red; font-family: Fira-sans; font-weight: bold;'>{str(text_content)}</h1>", unsafe_allow_html=True)
+    st.write(fr"<h1 style='font-size: 20px; color: white; font-family: Fira-sans; font-weight: bold;'>{str(text_content)}</h1>", unsafe_allow_html=True)
     # st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
