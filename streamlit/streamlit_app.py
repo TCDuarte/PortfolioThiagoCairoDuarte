@@ -66,7 +66,7 @@ def add_col_index(df):
     return listN
 
 def find_color(value, data):
-    st.write(data)
+    st.write(data[0])
     for item in data:
         if value in item.values():
             return list(item.keys())[0]  # Get the first key (color)
