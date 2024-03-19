@@ -86,14 +86,12 @@ def add_to_portfolium_page(data, number):
     for index, row in filteredDf.iterrows():
         projectName = row['nameEN'] if selectedLanguage == 'English' else row['namePT']
         st.write(fr"<h1 style='text-align: center; font-size: 16px; color: grey;'>{projectName}</h1>", unsafe_allow_html=True)
-        st.divider()
         card(
             title = "",
             text = row['nameEN'] if selectedLanguage == 'English' else row['namePT'],
             image = row['file'],
             url = row['url'],
             )
-        st.divider()
         tagger_component(
             "",
             row['tags'],
