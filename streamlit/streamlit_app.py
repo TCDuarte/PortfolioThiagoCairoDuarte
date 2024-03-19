@@ -78,7 +78,7 @@ def tag_color_list(tagsList):
     for x in tagsList:
         coloredTag = str(find_color(x, colorReference))
         colorList.append(coloredTag)
-        st.write(coloredTag)
+    return colorList
 
 def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
