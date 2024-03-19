@@ -9,10 +9,12 @@ import requests
 import base64
 from streamlit_extras.tags import tagger_component
 
+
 ########## DECLARAÇÃO DAS VARIÁVEIS CHAVES ##########
 
 username = 'TCDuarte'
 repository_name = 'PortfolioThiagoCairoDuarte'
+style = "<style>h2 {text-align: center;}</style>"
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
@@ -89,7 +91,8 @@ def add_to_portfolium_page(data, number):
             image = row['file'],
             url = row['url'],
             )
-        st.write(row['nameEN'] if selectedLanguage == 'English' else row['namePT'])
+        projectName = row['nameEN'] if selectedLanguage == 'English' else row['namePT']
+        st.write(fr"<h1 style='text-align: center; color: grey;'>{projectName}</h1>", unsafe_allow_html=True)
         tagger_component(
             "",
             row['tags'],
