@@ -125,7 +125,7 @@ st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
     cv = get_file_from_github(r'cv.txt')
-    st.write(fr"<h1 style='text-align: center; font-size: 40px; color: Black; font-family: Merriweather; font-weight: bold; background-color: white;'>{str(title)}</h1>", unsafe_allow_html=True)
+    st.write(fr"<h1 style=font-size: 40px; color: Black; font-family: Merriweather; font-weight: bold; background-color: white;'>{str(title)}</h1>", unsafe_allow_html=True)
     st.write(f"{cv}")
     
 ########## ABA - PORTIFÓLIO ##########
