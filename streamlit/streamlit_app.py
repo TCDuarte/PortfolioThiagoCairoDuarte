@@ -74,7 +74,7 @@ def find_color(value, data):
 
 def tag_color_list(tagsList):
     colorList = []
-    with open('data/color_reference.json', "r") as jsonfile:
+    with open(r'data/color_reference.json', "r") as jsonfile:
         colorReference = json.load(jsonfile)
     for x in tagsList:
         colorList.append(find_color(x, colorReference))
