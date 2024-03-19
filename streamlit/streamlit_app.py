@@ -120,7 +120,7 @@ selected2 = option_menu(None,
 
 title = str(selected2) if selected2 != options[0] else 'Thiago Cairo Duarte'
 st.divider()
-st.write(fr"<h1 style='text-align: center; font-size: 40px; color: grey;'>{str(title)}</h1>", unsafe_allow_html=True)
+st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(title)}</h1>", unsafe_allow_html=True)
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
