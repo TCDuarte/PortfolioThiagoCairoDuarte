@@ -84,6 +84,7 @@ def tag_color_list(tagsList):
 def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
+        projectName = row['nameEN'] if selectedLanguage == 'English' else row['namePT']
         st.write(fr"<h1 style='text-align: center; font-size: 16px; color: grey;'>{projectName}</h1>", unsafe_allow_html=True)
         st.divider()
         card(
@@ -92,7 +93,6 @@ def add_to_portfolium_page(data, number):
             image = row['file'],
             url = row['url'],
             )
-        projectName = row['nameEN'] if selectedLanguage == 'English' else row['namePT']
         st.divider()
         tagger_component(
             "",
