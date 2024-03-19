@@ -127,7 +127,7 @@ if selected2 == options[0]:
     cv = get_file_from_github(r'cv.txt')
     st.write(f"{cv}")
     
-########## ABA - PORTIFÓLIO ##########   
+########## ABA - PORTIFÓLIO ##########
 elif selected2 == options[1]:
     portfolioData = pd.read_json('data/portfolio.json')
     portfolioData['column'] = add_col_index(portfolioData)
