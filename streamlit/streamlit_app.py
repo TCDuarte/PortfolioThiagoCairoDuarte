@@ -2,6 +2,7 @@
 
 import pandas as pd
 import streamlit as st
+import json
 from streamlit_option_menu import option_menu
 from streamlit_extras.card import card
 import requests
@@ -64,6 +65,19 @@ def add_col_index(df):
         colNun = colNun + 1 if colNun != 4 else 1
     return listN
 
+def find_color(value, data):
+    for item in data:
+        if value in item.values():
+            return list(item.keys())[0]  # Get the first key (color)
+    return None
+
+def tag_color_list(tagsList):
+    colorList = []
+    with open(r'data/color_reference.json', "r") as jsonfile:
+        colorReference = json.load(jsonfile)
+    for x in tagsList:
+        colorList.append(find_color(x, colorReference))
+
 def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
@@ -77,7 +91,7 @@ def add_to_portfolium_page(data, number):
         tagger_component(
             "",
             row['tags'],
-            color_name=["blue", "orange"],
+            color_name = tag_color_list(row['tags']),
         )
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
