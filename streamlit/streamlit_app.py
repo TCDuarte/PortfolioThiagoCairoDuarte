@@ -101,11 +101,9 @@ st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
-    
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
-    
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
-    return_text()
+    st.write(return_text())
     # st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
