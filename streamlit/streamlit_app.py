@@ -93,6 +93,7 @@ def add_to_portfolium_page(data, number):
             row['tags'],
             color_name = tag_color_list(row['tags']),
         )
+        st.write(tag_color_list(row['tags']))
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
