@@ -73,7 +73,7 @@ def add_to_portfolium_page(data, number):
                     "width": "250px",
                     "height": "350px",
                     "border-radius": "30px",
-                    "justify-content": "flex-start"}
+                    "margin": 0}
                     }
                 )
         tagger_component(
