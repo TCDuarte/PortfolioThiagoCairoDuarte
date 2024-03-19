@@ -99,9 +99,9 @@ if selected2 == options[0]:
     with open(f"texts/{pathing}/education.txt", "r") as file:
         text_content = file.read()
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
-    st.write(type(text_content))
+    
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
-    st.write(fr"<h1 style='font-size: 20px; font-family: Fira-sans;'>{text_content}</h1>", unsafe_allow_html=True)
+    st.write(type(text_content))
     # st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
