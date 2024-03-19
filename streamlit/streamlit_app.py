@@ -17,9 +17,9 @@ style = "<style>h2 {text-align: center;}</style>"
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
-def return_text():
+def return_text(text):
     pathing = 'EN' if selectedLanguage == 'English' else 'PT'
-    with open(f"texts/{pathing}/education.txt", "r") as file:
+    with open(f"texts/{pathing}/{text}.txt", "r") as file:
         textContent = file.read()
     return textContent
 
@@ -103,7 +103,7 @@ st.divider()
 if selected2 == options[0]:
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
-    st.write(return_text())
+    st.write(return_text(education))
     # st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
