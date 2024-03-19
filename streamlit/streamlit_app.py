@@ -9,7 +9,6 @@ import requests
 import base64
 from streamlit_extras.tags import tagger_component
 
-
 ########## DECLARAÇÃO DAS VARIÁVEIS CHAVES ##########
 
 username = 'TCDuarte'
