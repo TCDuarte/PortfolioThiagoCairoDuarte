@@ -17,35 +17,6 @@ style = "<style>h2 {text-align: center;}</style>"
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
-def get_file_from_github(file_path):
-  """
-  Função para abrir os arquivos de texto do repositório.
-  Com o objetivo de não sobrecarregar o código com textos, os mesmos foram salvos dentro do repositório.
-  Por se tratar de um repositório público, não necessita de uma etapa de autenticação.
-
-  Argumentos:
-      file_path (str): Caminho para o arquivo.
-
-  Returns:
-      str: Texto contido dentro do arquivo.
-  """
-  language = 'EN' if selectedLanguage == 'English' else 'PT'
-  # URL da API baseada nos demais parâmetros
-  url = f"https://api.github.com/repos/{username}/{repository_name}/contents/streamlit/texts/{language}/{file_path}"
-  # Request
-  response = requests.get(url)
-  st.write(response.status_code)
-  # Checa se a request obteve sucesso
-  if response.status_code == 200:
-    data = response.json()
-    
-    # Decodificação do arquivo em texto
-    file_content = base64.b64decode(data["content"]).decode("utf-8")
-    return file_content
-  else:
-    print(f"Error: {response.status_code}")
-    return None
-
 def stringToList(serie):
     finalList = []
     for x in serie:
@@ -124,12 +95,11 @@ st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[0]:
-    cv = get_file_from_github(r'cv.txt')
     with open("texts/EN/cv.txt", "r") as file:
         text_content = file.read()
-    st.write(text_content)
+    
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(title)}</h1>", unsafe_allow_html=True)
-    st.write(f"{cv}")
+    st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
 elif selected2 == options[1]:
