@@ -1,30 +1,31 @@
 Alumia
   
-• Junior Business Intelligence Analyst (December/2022 - March/2023)
+• Analista de Business Intelligence Júnior (Dezembro/2022 - Março/2024)
   
-I'm in charge of generating insights to support management and direction decision-making,
-integration, and management of company data in a database, along with dashboards with
-automated Power BI and Python. In addition, duties when I was an intern at the company.
+Responsável pela geração de insights para apoiar a tomada decisão da gestão e direção,
+integração e gerenciamento dos dados da empresa em um banco de dados e criação de
+dashboards com Power BI e Python automatizados. Além das tarefas e funções de quando
+era estagiário na empresa..
   
-• Business Intelligence Intern (January/2022 - December/2022)
+• Estagiário de Business Intelligence (Janeiro/2022 - Dezembro/2022)
   
-I was responsible for creating commercial dashboards from the extraction and treatment of
-data to Dataviz, responsible for CRM governance (Hubspot), analytical and operational
-management of customer service chatbot (Blip), and sending weekly and daily reports with
-commercial information for administration and direction of the company.
+Criação de dashboards comerciais desde a extração e tratamento dos dados até o Dataviz,
+responsável pela governança do CRM (Hubspot), gerenciamento analítico e operacional do
+chatbot de atendimento ao cliente (Blip) e envio de relatórios semanais e diários com
+informações comerciais para gestão e direção da empresa.
   
 ESPM Social
   
-• Profissão Social Project Coordinator (Dez/2014 - Jun/2015)
+• Coordenação do Projeto Profissão Social (Dez/2014 - Jun/2015)
   
-My role was coordinating the project and formulating insertions with advertising and
-marketing approaches to complement education in the game design graduation course and
-digital art of the NGO CTC Digital.
+Responsável pela coordenação do projeto e formulação de inserções com abordagem
+publicitária e de marketing para complementação da educação nos cursos de game design
+e arte digital da ONG CTC Digital.
   
-• Press Officer (Jul/2014 - Dec/2014)
+• Assessor de Imprensa (Jul/2014 - Dez/2014)
   
-I was responsible for the social media of ESPM Social with the creative team.
+Responsável pelo social media da ESPM Social junto da equipe de criação.
   
-• Marketing consultant (Mar/2014 - Jul/2014)
+• Consultor de Marketing (Mar/2014 - Jul/2014)
   
-My responsibility was marketing consulting for the NGO Inovha.
+Responsável pela consultoria de marketing destinada à ONG Inovha.
