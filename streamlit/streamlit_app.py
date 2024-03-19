@@ -70,8 +70,8 @@ def add_to_portfolium_page(data, number):
             url = row['url'],
             styles={
                 "card": {
-                    "width": "200px",
-                    "height": "200px",
+                    "width": "250px",
+                    "height": "350px",
                     "border-radius": "30px"}
                     }
                 )
