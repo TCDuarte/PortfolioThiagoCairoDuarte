@@ -71,10 +71,10 @@ def add_to_portfolium_page(data, number):
             styles={
                 "card": {
                     "width": "250px",
-                    "height": "350px",
+                    "height": "300px",
                     "border-radius": "30px",
-                    "margin-top": -50,
-                    "padding": -10}
+                    "margin-top": -40,
+                    "margin-bottom": -50}
                     }
                 )
         tagger_component(
