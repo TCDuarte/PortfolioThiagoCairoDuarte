@@ -84,6 +84,8 @@ def tag_color_list(tagsList):
 def add_to_portfolium_page(data, number):
     filteredDf = data[data['column'] == number]
     for index, row in filteredDf.iterrows():
+        st.write(fr"<h1 style='text-align: center; font-size: 16px; color: grey;'>{projectName}</h1>", unsafe_allow_html=True)
+        st.divider()
         card(
             title = "",
             text = row['nameEN'] if selectedLanguage == 'English' else row['namePT'],
@@ -91,12 +93,13 @@ def add_to_portfolium_page(data, number):
             url = row['url'],
             )
         projectName = row['nameEN'] if selectedLanguage == 'English' else row['namePT']
-        st.write(fr"<h1 style='text-align: center; font-size: 16px; color: grey;'>{projectName}</h1>", unsafe_allow_html=True)
+        st.divider()
         tagger_component(
             "",
             row['tags'],
             color_name = tag_color_list(row['tags']),
         )
+        st.divider()
 
 ########## CONFIGURAÇÃO DO STREAMLIT ##########
 st.set_page_config(layout = 'wide')
