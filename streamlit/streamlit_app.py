@@ -107,6 +107,7 @@ if selected2 == options[0]:
     st.write(return_text('education'))
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(exp)}</h1>", unsafe_allow_html=True)
     st.write(return_text('experience'))
+    st.divider()
     # st.write(text_content)
     
 ########## ABA - PORTIFÓLIO ##########
