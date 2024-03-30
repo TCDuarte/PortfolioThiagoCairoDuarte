@@ -146,7 +146,11 @@ elif selected2 == options[2]:
     for x in manors:
         st.subheader(x[0])
         st.write(f'Instituição: {x[2]} | Emitido em {x[1]}')
-        st.write(f'Tags: {x[3]}')
+        tagger_component(
+            "",
+            x[3],
+            color_name = tag_color_list(x[3]),
+        )
 
 ########## ABA - SOBRE ##########
 else: 
