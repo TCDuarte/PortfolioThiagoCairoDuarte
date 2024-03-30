@@ -142,12 +142,12 @@ elif selected2 == options[2]:
     manors = certificates[certificates.Manor == True].values.tolist()
     for x in manors:
         st.subheader(x[0])
-        textSample = f'Instituição: {x[2]} | Emitido em {x[1]}' if selectedLanguage == 'English' else f'Institution: {x[2]} | Issued on {x[1]}'
+        textSample = f'Institution: {x[2]} | Issued on {x[1]}' if selectedLanguage == 'English' else f'Instituição: {x[2]} | Emitido em {x[1]}'
         st.write(textSample)
         countRows = certificates['Manor_name'].str.contains(f'{x[0]}').sum()
         if countRows > 1:
             minors = certificates[(certificates.Manor == False) & (certificates.Manor_name == str(x[0]))].iloc[:, :3]
-            label = 'Other certificates contained' if selectedLanguage == 'English' else 'Outros certificados contidos'
+            label = 'Related certificates' if selectedLanguage == 'English' else 'Certificados relacionados'
             with st.expander(label):
                 st.write(minors)
         st.divider()
