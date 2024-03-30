@@ -144,8 +144,9 @@ elif selected2 == options[2]:
 
     manors = certificates[certificates.Manor == True].values.tolist()
     for x in manors:
-        st.write(x)
-        st.write(type(x))
+        st.subheader(x[0])
+        st.write(f'Instituição: {x[2]} | Emitido em {x[1]}')
+        st.write(f'Tags: {x[3]}')
 
 ########## ABA - SOBRE ##########
 else: 
