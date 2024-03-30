@@ -145,7 +145,7 @@ elif selected2 == options[2]:
     manors = certificates[certificates.Manor == True].values.tolist()
     for x in manors:
         st.subheader(x[0])
-        st.write(f'Instituição: {x[2]} | Emitido em {x[1]}')
+        st.write(f'Instituição: {x[2]} | Emitido em {x[1]}') if selectedLanguage == 'English' else st.write(f'Institution: {x[2]} | Issued on {x[1]}')
         tagger_component(
             "",
             x[3],
@@ -154,7 +154,9 @@ elif selected2 == options[2]:
         countRows = certificates['Manor_name'].str.contains(f'{x[0]}').sum()
         if countRows > 1:
             minors = certificates[(certificates.Manor == False) & (certificates.Manor_name == str(x[0]))]
-            st.write(minors)
+            label = 'Other certificates contained' if selectedLanguage == 'English' else 'Outros certificados contidos'
+            with st.expander(label):
+                st.write(minors)
 
 ########## ABA - SOBRE ##########
 else: 
