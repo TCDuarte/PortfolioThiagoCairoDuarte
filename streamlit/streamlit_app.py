@@ -143,7 +143,8 @@ elif selected2 == options[2]:
     st.write(certificates)
 
     dfTest = certificates[certificates.Manor == True]
-    st.write(dfTest)
+    for x in dfTest:
+        st.write(x)
 
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
