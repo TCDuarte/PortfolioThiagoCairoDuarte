@@ -140,7 +140,7 @@ elif selected2 == options[2]:
                         inplace = True)
     #certificates.set_index([certificates.columns[0]],
     #                       inplace = True)
-    st.dataframe(certificates)
+    st.write(certificates)
 
 ########## ABA - SOBRE ##########
 else: st.write ('Não salve')
