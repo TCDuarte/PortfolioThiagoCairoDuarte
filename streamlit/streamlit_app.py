@@ -138,9 +138,6 @@ elif selected2 == options[2]:
                                  certificates.columns[1]: columnNames[1],
                                  certificates.columns[2]: columnNames[2]},
                         inplace = True)
-    #certificates.set_index([certificates.columns[0]],
-    #                       inplace = True)
-    st.write(certificates)
 
     manors = certificates[certificates.Manor == True].values.tolist()
     for x in manors:
@@ -149,7 +146,7 @@ elif selected2 == options[2]:
         st.write(textSample)
         countRows = certificates['Manor_name'].str.contains(f'{x[0]}').sum()
         if countRows > 1:
-            minors = certificates[(certificates.Manor == False) & (certificates.Manor_name == str(x[0]))]
+            minors = certificates[(certificates.Manor == False) & (certificates.Manor_name == str(x[0]))].iloc[:, :3]
             label = 'Other certificates contained' if selectedLanguage == 'English' else 'Outros certificados contidos'
             with st.expander(label):
                 st.write(minors)
