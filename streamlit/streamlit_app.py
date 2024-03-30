@@ -138,8 +138,8 @@ elif selected2 == options[2]:
                                  certificates.columns[1]: columnNames[1],
                                  certificates.columns[2]: columnNames[2]},
                         inplace = True)
-    certificates.set_index([certificates.columns[0]],
-                           inplace = True)
+    #certificates.set_index([certificates.columns[0]],
+    #                       inplace = True)
     st.dataframe(certificates)
 
 ########## ABA - SOBRE ##########
