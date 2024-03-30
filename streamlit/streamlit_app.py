@@ -151,6 +151,10 @@ elif selected2 == options[2]:
             x[3],
             color_name = tag_color_list(x[3]),
         )
+        countRows = certificates['Manor_name'].str.contains(f'{x[0]}').sum()
+        if countRows > 1:
+            minors = certificates[(certificates.Manor == False) & (certificates.Manor_name == str(x[0]))]
+            st.write(minors)
 
 ########## ABA - SOBRE ##########
 else: 
