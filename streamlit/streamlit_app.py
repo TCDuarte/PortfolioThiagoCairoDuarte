@@ -142,8 +142,8 @@ elif selected2 == options[2]:
     #                       inplace = True)
     st.write(certificates)
 
-    dfTest = certificates[certificates.Manor == True]
-    for x in dfTest:
+    manors = certificates[certificates.Manor == True]
+    for x in manors:
         st.write(x)
         st.write(type(x))
 
