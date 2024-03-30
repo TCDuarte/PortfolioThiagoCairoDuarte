@@ -5,8 +5,6 @@ import streamlit as st
 import json
 from streamlit_option_menu import option_menu
 from streamlit_extras.card import card
-import requests
-import base64
 from streamlit_extras.tags import tagger_component
 
 ########## DECLARAÇÃO DAS VARIÁVEIS CHAVES ##########
