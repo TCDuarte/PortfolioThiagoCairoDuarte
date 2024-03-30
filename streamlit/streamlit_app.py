@@ -142,7 +142,7 @@ elif selected2 == options[2]:
     #                       inplace = True)
     st.write(certificates)
 
-    manors = certificates[certificates.Manor == True]
+    manors = certificates[certificates.Manor == True].values.tolist()
     for x in manors:
         st.write(x)
         st.write(type(x))
