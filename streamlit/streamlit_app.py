@@ -94,7 +94,7 @@ with st.sidebar:
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=0)
     
-options = ['Currículo', 'Portifólio', 'Certificados', 'Sobre'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates', 'About']
+options = ['Currículo', 'Portifólio', 'Certificados', 'Outros conhecimentos'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates', 'Other expertise areas']
 
 selected2 = option_menu(None, 
                         options, 
@@ -148,4 +148,5 @@ elif selected2 == options[2]:
         st.write(type(x))
 
 ########## ABA - SOBRE ##########
-else: st.write ('Não salve')
+else: 
+    st.write ('Não salve')
