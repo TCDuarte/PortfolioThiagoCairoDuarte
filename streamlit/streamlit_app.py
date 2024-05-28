@@ -94,7 +94,7 @@ with st.sidebar:
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=0)
     
-options = ['Currículo', 'Portifólio', 'Certificados'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates']
+options = ['Portifólio', 'Certificados', 'Currículo'] if selectedLanguage == 'Português' else ['Portfolio', 'Certificates', 'Curriculum']
 
 selected2 = option_menu(None, 
                         options, 
