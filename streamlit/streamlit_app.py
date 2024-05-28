@@ -88,13 +88,13 @@ with st.sidebar:
     st.image('https://github.com/TCDuarte/PortfolioThiagoCairoDuarte/blob/main/streamlit/imgs/profile.png?raw=true',
              use_column_width = 'auto')
     st.write(f'**Thiago Cairo Duarte**')
-    st.write('15 99771-7474')
-    st.write('thiago.cairo.duarte@gmail.com')
+    st.write('📱 15 99771-7474')
+    st.write('✉️ thiago.cairo.duarte@gmail.com')
     st.write('https://www.linkedin.com/in/tcduarte/')
     selectedLanguage = option_menu('Idioma', ['Português', 'English'],
         menu_icon='cast', default_index=0)
     
-options = ['Currículo', 'Portifólio', 'Certificados', 'Outros conhecimentos'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates', 'Other expertise areas']
+options = ['Currículo', 'Portifólio', 'Certificados'] if selectedLanguage == 'Português' else ['Curriculum', 'Portfolio', 'Certificates']
 
 selected2 = option_menu(None, 
                         options, 
@@ -148,7 +148,7 @@ elif selected2 == options[2]:
         if countRows > 1:
             minors = certificates[(certificates.Manor == False) & (certificates.Manor_name == str(x[0]))].iloc[:, :3]
             label = 'Related certificates' if selectedLanguage == 'English' else 'Certificados relacionados'
-            with st.expander(label):
+            with st.popover(label):
                 st.write(minors)
         st.divider()
 
