@@ -105,6 +105,7 @@ title = str(selected2) if selected2 != options[0] else 'Thiago Cairo Duarte'
 st.divider()
 st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(title)}</h1>", unsafe_allow_html=True)
 st.divider()
+st.write(options[2])
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[2]:
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
