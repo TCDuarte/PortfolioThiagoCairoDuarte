@@ -106,7 +106,7 @@ st.divider()
 st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(title)}</h1>", unsafe_allow_html=True)
 st.divider()
 ########## ABA - CURRÍCULO ##########
-if selected2 == options[0]:
+if selected2 == options[2]:
     educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     exp = 'Professional experience' if selectedLanguage == 'English' else 'Experiência Profissional'
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
@@ -116,7 +116,7 @@ if selected2 == options[0]:
     st.divider()
     
 ########## ABA - PORTIFÓLIO ##########
-elif selected2 == options[1]:
+elif selected2 == options[0]:
     portfolioData = pd.read_json('data/portfolio.json')
     portfolioData['column'] = add_col_index(portfolioData)
     cols = st.columns(4)
@@ -125,7 +125,7 @@ elif selected2 == options[1]:
             add_to_portfolium_page(portfolioData, col_num)
         
 ########## ABA - CERTIFICADOS ##########
-elif selected2 == options[2]:
+elif selected2 == options[1]:
     link = st.secrets['CERTIFICATES']
     certificates = pd.read_csv(link)
     certificates['Tags'] = stringToList(certificates['Tags'])
