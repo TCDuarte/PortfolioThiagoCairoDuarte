@@ -18,9 +18,8 @@ style = "<style>h2 {text-align: center;}</style>"
 
 def return_pdf(text):
     pathing = 'EN' if selectedLanguage == 'English' else 'PT'
-    with open(f"texts/{pathing}/{text}.pdf", "r") as file:
-        textContent = file.read()
-    return textContent
+    pdf = f"texts/{pathing}/{text}.pdf"
+    return pdf
 
 def stringToList(serie):
     finalList = []
@@ -108,8 +107,7 @@ st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[2]:
-    curriculum = return_pdf('cv')
-    pdf_viewer(curriculum)
+    pdf_viewer(return_pdf('cv'))
     """ educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     exp = 'Professional experience' if selectedLanguage == 'English' else 'Experiência Profissional'
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
