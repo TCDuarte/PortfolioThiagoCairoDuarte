@@ -112,8 +112,7 @@ if selected2 == options[2]:
                        file_name = 'Thiago Cairo Duarte - CV.pdf',
                        mime = 'application/octet-stream"')
     pdf_viewer(return_pdf('cv'),
-               width = 5000,
-               render_text = True)
+               width = 5000)
     
 ########## ABA - PORTIFÓLIO ##########
 elif selected2 == options[0]:
