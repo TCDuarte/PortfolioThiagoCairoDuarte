@@ -16,9 +16,9 @@ style = "<style>h2 {text-align: center;}</style>"
 
 ########## DECLARAÇÃO DAS FUNÇÕES ##########
 
-def return_text(text):
+def return_pdf(text):
     pathing = 'EN' if selectedLanguage == 'English' else 'PT'
-    with open(f"texts/{pathing}/{text}.txt", "r") as file:
+    with open(f"texts/{pathing}/{text}.pdf", "r") as file:
         textContent = file.read()
     return textContent
 
@@ -108,13 +108,14 @@ st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[2]:
-    educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
+    pdf_viewer(return_pdf('cv'))
+    """ educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     exp = 'Professional experience' if selectedLanguage == 'English' else 'Experiência Profissional'
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
     st.write(return_text('education'))
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(exp)}</h1>", unsafe_allow_html=True)
     st.write(return_text('experience'))
-    st.divider()
+    st.divider() """
     
 ########## ABA - PORTIFÓLIO ##########
 elif selected2 == options[0]:
