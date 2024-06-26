@@ -107,7 +107,12 @@ st.write(fr"<h1 style='text-align: center; font-size: 40px; color: white;'>{str(
 st.divider()
 ########## ABA - CURRÍCULO ##########
 if selected2 == options[2]:
-    pdf_viewer(return_pdf('cv'))
+    st.download_button('Download CV' if selectedLanguage == 'English' else 'Baixar CV',
+                       data = open(return_pdf('cv'), 'rb'),
+                       file_name = 'Thiago Cairo Duarte - CV.pdf',
+                       mime = 'application/octet-stream"')
+    pdf_viewer(return_pdf('cv'),
+               width = 6000)
     """ educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
     exp = 'Professional experience' if selectedLanguage == 'English' else 'Experiência Profissional'
     st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
