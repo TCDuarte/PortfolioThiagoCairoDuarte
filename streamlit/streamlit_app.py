@@ -112,14 +112,8 @@ if selected2 == options[2]:
                        file_name = 'Thiago Cairo Duarte - CV.pdf',
                        mime = 'application/octet-stream"')
     pdf_viewer(return_pdf('cv'),
-               width = 6000)
-    """ educ = 'Education' if selectedLanguage == 'English' else 'Formação Acadêmica'
-    exp = 'Professional experience' if selectedLanguage == 'English' else 'Experiência Profissional'
-    st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(educ)}</h1>", unsafe_allow_html=True)
-    st.write(return_text('education'))
-    st.write(fr"<h1 style='font-size: 40px; color: white; font-family: Merriweather; font-weight: bold;'>{str(exp)}</h1>", unsafe_allow_html=True)
-    st.write(return_text('experience'))
-    st.divider() """
+               width = 5000,
+               render_text = True)
     
 ########## ABA - PORTIFÓLIO ##########
 elif selected2 == options[0]:
